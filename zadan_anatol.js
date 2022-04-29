@@ -19,5 +19,18 @@ function printSmile(b1, numberOfRowsb2){   //2*. Преобразовать 2 з
         console.log(b3 += b1)
     }    
 } 
-let numberOfRows
 printSmile('+', 6)
+
+function getWordStructure(word){
+    const glasn = 'aeiouy'.split('')
+    const soglasn = 'bcdfghjklmnpqrstwvxz'.split('')
+    let kolSogl = 0, kolGlasn = 0
+    for (char of word.toLowerCase()){
+        if (glasn.includes(char)) kolSogl++
+        if (soglasn.includes(char)) kolGlasn++
+    }
+    console.log('Слово ' + word + ' состоит из ' + kolSogl + ' согласных и ' + kolGlasn + ' гласных')
+}
+getWordStructure('case')
+getWordStructure('Case')
+getWordStructure('Check-list')
