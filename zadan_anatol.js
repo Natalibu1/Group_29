@@ -29,7 +29,7 @@ function getWordStructure(word){
         if (glasn.includes(char)) kolSogl++
         if (soglasn.includes(char)) kolGlasn++
     }
-    console.log('Слово ' + word + ' состоит из ' + kolSogl + ' согласных и ' + kolGlasn + ' гласных')
+    console.log(`Слово ${word} состоит из ${kolSogl} согласных и ${kolGlasn} гласных`)
 }
 getWordStructure('case')
 getWordStructure('Case')
